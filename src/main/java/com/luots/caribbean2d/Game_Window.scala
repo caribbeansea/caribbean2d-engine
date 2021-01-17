@@ -1,5 +1,7 @@
 package com.luots.caribbean2d
 
+import javax.swing.JFrame
+
 /* ************************************************************************
  *
  * Copyright (C) 2020 dahan All rights reserved.
@@ -25,6 +27,4 @@ package com.luots.caribbean2d
 /**
  * @author tiansheng
  */
-class Game_Window {
-
-}
+class Game_Window extends JFrame
