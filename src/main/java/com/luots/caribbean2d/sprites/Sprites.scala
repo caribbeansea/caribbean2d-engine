@@ -83,7 +83,7 @@ class Sprites(private val sprite_sheet: BufferedImage, val rect_w: Int, val rect
    * @param y 初始Y坐标
    * @return 子精灵
    */
-  def Get_Subsprites(x: Int, y: Int): BufferedImage = sprite_arr(x)(y)
+  def get_subsprites(x: Int, y: Int): BufferedImage = sprite_arr(x)(y)
 
 }
 
