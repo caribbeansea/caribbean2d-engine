@@ -61,7 +61,7 @@
       <module name="caribbean2d-engine" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.luots.caribbean2d.animation.*" />
+          <option name="PATTERN" value="com.torvbell.game_engine.animation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,7 +101,7 @@
       <workItem from="1610890109825" duration="582000" />
       <workItem from="1610890873274" duration="3466000" />
       <workItem from="1611160446757" duration="4867000" />
-      <workItem from="1611238286634" duration="1457000" />
+      <workItem from="1611238286634" duration="2119000" />
     </task>
     <servers />
   </component>
