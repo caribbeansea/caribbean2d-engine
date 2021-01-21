@@ -1,5 +1,13 @@
 package com.luots.caribbean2d
 
+import com.luots.caribbean2d.input.{gui_input, key_handler, mouse_handler}
+import com.luots.caribbean2d.renderer.gui_renderer
+import com.luots.caribbean2d.state.{game_state, game_state_manager}
+import com.luots.caribbean2d.update.gui_update
+import com.luots.caribbean2d.utils.lists
+
+import java.awt.Graphics2D
+import java.util
 import javax.swing.JPanel
 
 /* ************************************************************************
@@ -27,6 +35,21 @@ import javax.swing.JPanel
 /**
  * @author tiansheng
  */
-class Game_Panel extends JPanel {
+class game_panel extends JPanel with gui_renderer
+  with gui_update with gui_input {
+
+  val state_manager = new game_state_manager()
+
+  override def render(graphics: Graphics2D, x: Int, y: Int, w: Int, h: Int): Unit = {
+
+  }
+
+  override def update(): Unit = {
+
+  }
+
+  override def input(key_h: key_handler, mouse_h: mouse_handler): Unit = {
+
+  }
 
 }

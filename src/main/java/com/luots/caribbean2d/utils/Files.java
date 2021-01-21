@@ -27,7 +27,7 @@ import java.io.File;
 /**
  * @author tiansheng
  */
-public class Files
+public class files
 {
 
     public static String getExtension(File file)

@@ -25,10 +25,10 @@ package com.luots.caribbean2d.utils;
 /**
  * @author tiansheng
  */
-public class Tool_For_Java
+public class tool_for_java
 {
 
-    public static void __Double_For__(int a, int b, Double_For_Achieve achieve)
+    public static void __Double_For__(int a, int b, double_for_achieve achieve)
     {
         for (int i = 0; i < a; i++)
         {

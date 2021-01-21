@@ -70,15 +70,13 @@
         <option name="com.soywiz.korge.intellij.UpdateResourceBeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="com.soywiz.korge.intellij.UpdateResourceBeforeRunTask" enabled="false" />
@@ -102,7 +100,8 @@
       <workItem from="1610883136062" duration="4654000" />
       <workItem from="1610890109825" duration="582000" />
       <workItem from="1610890873274" duration="3466000" />
-      <workItem from="1611160446757" duration="2218000" />
+      <workItem from="1611160446757" duration="4867000" />
+      <workItem from="1611238286634" duration="1457000" />
     </task>
     <servers />
   </component>

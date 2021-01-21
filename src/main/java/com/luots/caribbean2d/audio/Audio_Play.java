@@ -29,12 +29,12 @@ package com.luots.caribbean2d.audio;
  * 一帧一帧的进行播放，而这个播放的过程是阻塞性的，所以会导致整个程序被阻塞在
  * 音频播放上面。
  *
- * 对此我写了个类叫做{@link Abstract_Audio_Play}，通过这个类去实现它的 {@link Abstract_Audio_Play#run()}
+ * 对此我写了个类叫做{@link abstract_audioplay}，通过这个类去实现它的 {@link abstract_audioplay#run()}
  * 方法。实现并行运行。
  *
  * @author tiansheng
  */
-public interface Audio_Play
+public interface audio_play
 {
 
     enum Play
@@ -46,7 +46,7 @@ public interface Audio_Play
      * 播放音频, 这里的play如果没有特殊要求请不要重写它。
      * 因为它默认的作用是启动当前线程去播放音频。
      * <p>
-     * 真正解码音频的是 {@link Abstract_Audio_Play#run()} 方法，run()方法是继承自 {@link Thread}。
+     * 真正解码音频的是 {@link abstract_audioplay#run()} 方法，run()方法是继承自 {@link Thread}。
      * 所以如果要写解码音频格式的处理请在#run()中编写。
      *
      * @param play Play枚举代表当前播放的类型, {@link Play#ONCE}表示只播放一次。播放完毕后结束。

@@ -27,4 +27,4 @@ import javax.swing.JFrame
 /**
  * @author tiansheng
  */
-class Game_Window extends JFrame
+class game_window extends JFrame

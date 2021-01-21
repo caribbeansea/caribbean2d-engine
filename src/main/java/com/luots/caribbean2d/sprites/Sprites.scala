@@ -1,7 +1,7 @@
 package com.luots.caribbean2d.sprites
 
-import com.luots.caribbean2d.sprites.Sprites.__DEFAULT_TILE_SIZE__
-import com.luots.caribbean2d.utils.{Double_For_Achieve, Tool_For_Java}
+import com.luots.caribbean2d.sprites.sprites.__DEFAULT_TILE_SIZE__
+import com.luots.caribbean2d.utils.{double_for_achieve, tool_for_java}
 
 import java.awt.image.BufferedImage
 
@@ -41,7 +41,7 @@ import java.awt.image.BufferedImage
  * @param rect_h       矩形高度
  * @author tiansheng
  */
-class Sprites(private val sprite_sheet: BufferedImage, val rect_w: Int, val rect_h: Int) {
+class sprites(private val sprite_sheet: BufferedImage, val rect_w: Int, val rect_h: Int) {
 
   /**
    * 精灵图片宽度
@@ -60,7 +60,7 @@ class Sprites(private val sprite_sheet: BufferedImage, val rect_w: Int, val rect
     /* 生成一个二维数组 */
     val sprite_arr = Array.ofDim[BufferedImage](sprite_h, sprite_w)
 
-    Tool_For_Java.__Double_For__(sprite_h, sprite_w, new Double_For_Achieve() {
+    tool_for_java.__Double_For__(sprite_h, sprite_w, new double_for_achieve() {
       override def achieve(x: Int, y: Int): Unit = {
         sprite_arr(x)(y) = sprite_sheet.getSubimage(y * rect_h, x * rect_w, rect_w, rect_h)
       }
@@ -87,7 +87,7 @@ class Sprites(private val sprite_sheet: BufferedImage, val rect_w: Int, val rect
 
 }
 
-object Sprites {
+object sprites {
   val __DEFAULT_TILE_SIZE__ : Int = 32
 }
 

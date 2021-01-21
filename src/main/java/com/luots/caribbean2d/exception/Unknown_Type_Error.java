@@ -25,24 +25,24 @@ package com.luots.caribbean2d.exception;
 /**
  * @author tiansheng
  */
-public class Unknown_Type_Error extends Base_Error {
+public class unknown_type_error extends base_error {
 
-    public Unknown_Type_Error() {
+    public unknown_type_error() {
     }
 
-    public Unknown_Type_Error(String message) {
+    public unknown_type_error(String message) {
         super(message);
     }
 
-    public Unknown_Type_Error(String message, Throwable cause) {
+    public unknown_type_error(String message, Throwable cause) {
         super(message, cause);
     }
 
-    public Unknown_Type_Error(Throwable cause) {
+    public unknown_type_error(Throwable cause) {
         super(cause);
     }
 
-    public Unknown_Type_Error(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+    public unknown_type_error(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
         super(message, cause, enableSuppression, writableStackTrace);
     }
 }

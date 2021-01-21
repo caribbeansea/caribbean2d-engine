@@ -22,9 +22,9 @@ package com.luots.caribbean2d.audio;
  * Creates on 2020/12/30.
  */
 
-import com.luots.caribbean2d.audio.type.Play_Mp3;
-import com.luots.caribbean2d.exception.Unknown_Type_Error;
-import com.luots.caribbean2d.utils.Files;
+import com.luots.caribbean2d.audio.type.play_for_mp3;
+import com.luots.caribbean2d.exception.unknown_type_error;
+import com.luots.caribbean2d.utils.files;
 
 import java.io.File;
 import java.util.Locale;
@@ -34,7 +34,7 @@ import java.util.Locale;
  *
  * @author tiansheng
  */
-public class Audio_Plays
+public class audio_plays
 {
 
     private static final String AUDIO_DIR = "resources/audio";
@@ -52,10 +52,10 @@ public class Audio_Plays
      *
      * @return AudioPlay实例
      */
-    public static Audio_Play getAudioPlayInstance(File audiof)
+    public static audio_play getAudioPlayInstance(File audiof)
     {
 
-        String extension = Files.getExtension(audiof);
+        String extension = files.getExtension(audiof);
         AudioType audioType = AudioType.valueOf(extension.toUpperCase(Locale.ROOT));
 
         try
@@ -63,13 +63,13 @@ public class Audio_Plays
             switch (audioType)
             {
                 case MP3:
-                    return new Play_Mp3(audiof);
+                    return new play_for_mp3(audiof);
                 default: {
-                    throw new Unknown_Type_Error(String.format("不支持音频格式: [%s]", extension));
+                    throw new unknown_type_error(String.format("不支持音频格式: [%s]", extension));
                 }
             }
         }catch (Exception e) {
-            throw new Unknown_Type_Error(String.format("音频加载失败: [%s]", audiof.getAbsolutePath()), e);
+            throw new unknown_type_error(String.format("音频加载失败: [%s]", audiof.getAbsolutePath()), e);
         }
 
     }

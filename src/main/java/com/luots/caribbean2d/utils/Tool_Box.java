@@ -22,7 +22,7 @@ package com.luots.caribbean2d.utils;
  * Creates on 2020/12/31.
  */
 
-import com.luots.caribbean2d.Log;
+import com.luots.caribbean2d.log;
 import sun.misc.Unsafe;
 
 import javax.imageio.ImageIO;
@@ -38,7 +38,7 @@ import java.util.Random;
 /**
  * 工具箱
  */
-public class Tool_Box
+public class tool_box
 {
 
     public static Random RANDOM = new Random();
@@ -110,7 +110,7 @@ public class Tool_Box
             image = ImageIO.read(imageFile);
         } catch (IOException e)
         {
-            Log.error("cloud not load image for %s", e, imageFile.getPath());
+            log.error("cloud not load image for %s", e, imageFile.getPath());
         }
         return image;
     }

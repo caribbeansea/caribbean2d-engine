@@ -4,7 +4,7 @@ package com.luots.caribbean2d.utils;
  * Creates on 2020/5/14.
  */
 
-import com.luots.caribbean2d.Log;
+import com.luots.caribbean2d.log;
 
 import java.io.Closeable;
 import java.io.IOException;
@@ -12,7 +12,7 @@ import java.io.IOException;
 /**
  * @author kevin
  */
-public class Auto_Close
+public class auto_close
 {
 
   public static void close(Closeable... closeables) {
@@ -23,7 +23,7 @@ public class Auto_Close
         closeable.close();
       }
     }catch (IOException e){
-      Log.error("close failure.", e);
+      log.error("close failure.", e);
     }
   }
 

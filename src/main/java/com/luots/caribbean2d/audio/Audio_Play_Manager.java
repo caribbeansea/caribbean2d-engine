@@ -22,7 +22,7 @@ package com.luots.caribbean2d.audio;
  * Creates on 2020/12/30.
  */
 
-import com.luots.caribbean2d.utils.Lists;
+import com.luots.caribbean2d.utils.lists;
 
 import java.util.List;
 
@@ -32,25 +32,25 @@ import java.util.List;
  *
  * @author tiansheng
  */
-public class Audio_Play_Manager
+public class audio_play_manager
 {
 
     /**
      * 当前正在播放的音效
      */
-    private static final List<Thread> playing = Lists.newArrayList();
+    private static final List<Thread> playing = lists.new_arraylist();
 
     /**
      * 提交一个播放任务
      *
      * @param playTask 音频对象
      */
-    public static void putAudioTask(Abstract_Audio_Play playTask)
+    public static void putAudioTask(abstract_audioplay playTask)
     {
         playing.add(createThread(playTask));
     }
 
-    private static Thread createThread(Abstract_Audio_Play playTask)
+    private static Thread createThread(abstract_audioplay playTask)
     {
         return new Thread(playTask);
     }

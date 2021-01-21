@@ -25,7 +25,7 @@ package com.luots.caribbean2d.utils;
 /**
  * @author tiansheng
  */
-public interface Double_For_Achieve
+public interface double_for_achieve
 {
 
     void achieve(int a, int b);

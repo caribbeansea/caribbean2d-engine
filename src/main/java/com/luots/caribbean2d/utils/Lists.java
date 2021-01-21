@@ -10,9 +10,9 @@ import java.util.function.UnaryOperator;
  * @author wyz
  * @since 1.8
  */
-public final class Lists {
+public final class lists {
 
-    private Lists() {
+    private lists() {
     }
 
     /**
@@ -51,7 +51,7 @@ public final class Lists {
      *
      * @return 空的 {@code ArrayList} 实例
      */
-    public static <E> ArrayList<E> newArrayList(int capacity) {
+    public static <E> ArrayList<E> new_arraylist(int capacity) {
         return new ArrayList<>(capacity);
     }
 
@@ -61,7 +61,7 @@ public final class Lists {
      *
      * @return 新的List且带有传入List数据的实例
      */
-    public static <E> ArrayList<E> newArrayList(Collection<? extends E> collection) {
+    public static <E> ArrayList<E> new_arraylist(Collection<? extends E> collection) {
         return new ArrayList<>(collection);
     }
 
@@ -74,7 +74,7 @@ public final class Lists {
      * @return 新的List且带有传入List数据的实例
      */
     @SafeVarargs
-    public static <E> ArrayList<E> newArrayList(E... e) {
+    public static <E> ArrayList<E> new_arraylist(E... e) {
         return new ArrayList<>(of(e));
     }
 
@@ -150,7 +150,7 @@ public final class Lists {
      *
      * @param collection 集合实例
      * @param type       根据哪种类型进行排序，有以下几种
-     *                   {@link Lists#ASC} ASC为升序
+     *                   {@link lists#ASC} ASC为升序
      * @link DESC} DESC则为降序
      * <p>
      * 如果List中的元素是对象的话，如果要根据对象的某个值进行排序的话请实现{@link Comparable}接口。例如：<code>

@@ -25,24 +25,24 @@ package com.luots.caribbean2d.exception;
 /**
  * @author tiansheng
  */
-public class Base_Error extends RuntimeException {
+public class base_error extends RuntimeException {
 
-    public Base_Error() {
+    public base_error() {
     }
 
-    public Base_Error(String message) {
+    public base_error(String message) {
         super(message);
     }
 
-    public Base_Error(String message, Throwable cause) {
+    public base_error(String message, Throwable cause) {
         super(message, cause);
     }
 
-    public Base_Error(Throwable cause) {
+    public base_error(Throwable cause) {
         super(cause);
     }
 
-    public Base_Error(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+    public base_error(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
         super(message, cause, enableSuppression, writableStackTrace);
     }
 }

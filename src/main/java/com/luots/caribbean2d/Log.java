@@ -27,7 +27,7 @@ import java.io.PrintStream;
 /**
  * @author tiansheng
  */
-public class Log
+public class log
 {
 
     private static final PrintStream out = System.out;

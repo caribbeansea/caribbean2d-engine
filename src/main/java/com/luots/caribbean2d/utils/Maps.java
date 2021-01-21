@@ -11,9 +11,9 @@ import java.util.concurrent.ConcurrentHashMap;
  *
  * @author kevin
  */
-public final class Maps {
+public final class maps {
 
-    private Maps() {
+    private maps() {
     }
 
 //  /**

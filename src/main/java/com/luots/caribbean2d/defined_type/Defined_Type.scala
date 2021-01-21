@@ -1,6 +1,6 @@
 package com.luots.caribbean2d.defined_type
 
-trait Defined_Type {
+trait defined_type {
 
   type Error = Throwable
   type Bool = Boolean
@@ -13,6 +13,6 @@ trait Defined_Type {
   /* 类型判断 */
   type sizeof = Unit /* 对象大小计算 */
 
-  type Un_Int = Type_UnInt
+  type Un_Int = type_unint
 
 }

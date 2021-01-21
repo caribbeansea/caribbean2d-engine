@@ -22,14 +22,14 @@ package com.luots.caribbean2d.defined_type;
  * Creates on 2021/1/17.
  */
 
-import com.luots.caribbean2d.utils.Tool_Box;
+import com.luots.caribbean2d.utils.tool_box;
 import sun.misc.Unsafe;
 
 /**
  * @author tiansheng
  */
-public class Type_UnInt {
+public class type_unint {
 
-    private final Unsafe unsafe = Tool_Box.UNSAFE;
+    private final Unsafe unsafe = tool_box.UNSAFE;
 
 }
